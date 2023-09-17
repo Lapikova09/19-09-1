@@ -1,0 +1,41 @@
+.container{
+    background-color: rgb(241, 116, 116);
+    width: 500px;
+    height: 250px;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    
+}
+ol{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+li{
+    margin-top: 20px;
+    background-color: rgb(218, 67, 67);
+
+}
+ol {
+    list-style-type: none;
+    counter-reset: item;
+}
+ol li:before {
+    content: counter(item) '. ';
+    counter-increment: item;
+   background-color:  rgb(218, 67, 67);
+   font-size: x-large;
+   padding-left: 10px;
+}
+span{
+    background-color: rgb(187, 6, 6);
+    font-size: x-large;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+li:first-child {
+    margin-top: 0px;
+}
+
